@@ -115,4 +115,22 @@ void piramideCompleta(int numero) {
     print('');
   }
 }
+
+void secuenciaFibonacci(int n) {
+  int a = 0, b = 1, c;
+  if (n == 0) {
+    print('1-. $a');
+  } else if (n == 1) {
+    print('2.- $b');
+  } else {
+    print('1.-$a');
+    print('2.-$b');
+    for (int i = 2; i < n; i++) {
+      c = a + b;
+      print('${i + 1}.- $c');
+      a = b;
+      b = c;
+    }
+  }
+}
 // lib/dart_basics.dart

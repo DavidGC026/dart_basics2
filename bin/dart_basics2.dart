@@ -36,4 +36,11 @@ void main(List<String> arguments) {/*
   print ('Introduce un numero para hacer una piramide espaciada:');
   String numero3 = stdin.readLineSync()!;
   dart_basics2.piramideCompleta(int.parse(numero3));
+
+  //Fibonacci
+  print ('Introduce un numero para calcular la serie de Fibonacci:');
+  String numeroFibonacci = stdin.readLineSync()!;
+  int n = int.parse(numeroFibonacci);
+  print('Serie de Fibonacci hasta $n:');
+  dart_basics2.secuenciaFibonacci(n);
 }
